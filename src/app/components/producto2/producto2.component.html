@@ -3,6 +3,38 @@
         <h2>Este es Producto 2</h2>
     </div><br>
 
-    <a class="btn" routerLink="/">Volver al dashboard</a>
+    <div bc-card>
+        <div class="bc-card-body">
+          <h6 class="bc-card-title bc-align-left">Cuenta Bancolombia 001</h6>
+          <p class="bc-card-subtitle bc-align-left">Ahorros</p>
+          <p class="bc-card-subtitle-number bc-align-left">020-342566-23</p>
+          <div class="bc-card-info">
+            <div class="bc-row">
+              <div class="bc-col-6"></div>
+              <div class="bc-col-6 bc-align-right">
+                <div class="bc-card-status bc-card-status-error">
+                  <p>Bloqueada</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  <br>
+
+      <div class="input">
+        <!-- <bc-form-field>
+          <input appOnlyNumber bc-input aria-label="input-default" type="text" value="" required />
+          <label>Label</label>
+        </bc-form-field>  -->
+
+          <bc-form-field>
+            <em>product-number</em>
+            <input appOnlyNumber maxlength="16"  bc-input aria-label="input-default" autocomplete="off"
+            type="text" value="" required />
+            <label for="numeroDocumento">Número de documento</label>
+          </bc-form-field>
+      </div> <br>
+
+      <a class="btn" routerLink="/">Volver al dashboard</a>
 
 </div>
